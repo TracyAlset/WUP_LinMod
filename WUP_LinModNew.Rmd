@@ -32,10 +32,16 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ```
 
 ## Model 1 SIM~ARMS
-
 ### scatterplot
+```{r}
+plot(SIMS~ARM,data=data)
+```
+It looks like there is an obvious linear relationship between SIMS and ARM
+
 
 ### Numerical results
+
+
 
 
 ### Inferential  (Build model.1)
