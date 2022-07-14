@@ -36,13 +36,17 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 ```{r}
 plot(SIMS~ARM,data=data)
 ```
-It looks like there is an obvious linear relationship between SIMS and ARM
+
+It looks like there is an obvious linear relationship between SIMS and ARM.
 
 
 ### Numerical results
 
+```{r}
+cor(SIMS~ARM,data=data)
+```
 
-
+The correlation coefficient is somewhat close to 1 showing a decent linear relationship between SIMS and ARM. 
 
 ### Inferential  (Build model.1)
 
