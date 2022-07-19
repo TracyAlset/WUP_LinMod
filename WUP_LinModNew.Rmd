@@ -37,7 +37,7 @@ data <- read.csv(file="https://onlinestatbook.com/case_studies_rvls/physical_str
 plot(SIMS~ARM,data=data)
 ```
 
-It looks like there is an obvious linear relationship between SIMS and ARM.
+It looks like there is an obvious linear relationship between SIMS and ARM, meaning as arm length increases the better the performance of the worker in the simulation is . 
 
 
 ```{r}
@@ -64,7 +64,7 @@ model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
 
-
+Based on the inferential results, looking at the adjusted r squared value and the residual standard error, it looks like this model is linear till a certain extend. the error isn't that high so it shows that the data that we have in this model doesn't really differ from the actual data.
 
 
 #### Predict at target point
@@ -84,8 +84,13 @@ predict(model.1, TargetARM,interval ="prediction")
 basicNN + geom_point()+ geom_lm()
 ```  
   
+  95% of the points above and below the best fit line are within 2*residual standard error. 
+  
 
 ## Model 2 SIM~GRIP
+
+
+
 
 ### Now add in scatterplot
 
