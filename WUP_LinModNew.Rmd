@@ -144,12 +144,14 @@ In this model , because the residual standard error is higher , the interval whe
 
 ## Model 3 SIM~ARM+GRIP
 
-
-
-
 ### Numerical results (cor)
 
-`
+````{r}
+cor(SIMS~ARM+GRIP,data=data)
+```
+  
+The correlation coefficient for model 3 is higher than both model 1 and model 2 , showing a better linear relationship between sims and arm+grip , meaning the performance of the worker is the best when considering an increase in both arm length and grip.  
+  
   
 ### Inferential  (Build 2-dimentional model.3)
 
