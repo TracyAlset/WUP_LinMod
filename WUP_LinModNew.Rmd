@@ -89,17 +89,28 @@ basicNN + geom_point()+ geom_lm()
 
 ## Model 2 SIM~GRIP
 
-
-
-
 ### Now add in scatterplot
+```{r}
+plot(SIMS~GRIP,data=data)
+```
+
+the scatter plot shows somewhat a descent linear relationship between SIMS and GRIP.
+
 
 
 ### Numerical results 
 
 
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+The correlation coefficient is somewhat close to 1 showing a decent linear relationship between SIMS and GRIP.
+
 ### Inferential  (Build model.2)
   
+
+
 
 #### predict model.2 at target point
 
