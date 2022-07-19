@@ -197,6 +197,9 @@ The residual standard error for model 2 is 243.07 which is higher than the one f
 anova(model.2 , model.1)
 ```
 
+the residual standard error for model 2 is 243.07 which  is higher than the one for model 1 which is 217.88 showing that model 1 is better than model 2 and the p value proves that as well.
 
+
+in conclusion model 3 is the best model.
 
 
