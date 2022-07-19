@@ -180,7 +180,7 @@ predict(model.3, TargetARMGRIP,interval ="prediction")
 ```{r}
 anova(model.1 , model.3)
 ```
-model 1 has a residual standard error of 217.88 which is higher than the one for model3. and the p value shows that there is a signifacant difference between model 1 and 3 , therefor model 3 is better than model 1. 
+model 1 has a residual standard error of 217.88 which is higher than the one for model3 which is 188.43. and the p value shows that there is a signifacant difference between model 1 and 3 , therefor model 3 is better than model 1. 
 
 
 ### Model.2 vs Model.3
@@ -188,6 +188,9 @@ model 1 has a residual standard error of 217.88 which is higher than the one for
 ```{r}
 anova(model.2 , model.3)
 ```
+
+The residual standard error for model 2 is 243.07 which is higher than the one for model 3 which is 188.43, this shows that model 3 is better than model 2 and based on the p value there is a significant statistical difference between model 2 and model 3 confirming that model 3 is better than model 2.
+
 
 ## Informally compare Model.1 with model.2
 ```{r}
