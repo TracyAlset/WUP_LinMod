@@ -115,8 +115,8 @@ The correlation coefficient is somewhat close to 1 showing a decent linear relat
 ### Inferential  (Build model.2)
   
 ```{r}
-model.1 <- lm(SIMS~GRIP,data=data)
-summary.lm(model.1)
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
 ```
 
 Just like the previous model, it looks like this one has quite a good linear relationship between SIMS and GRIP but it's not as good as the one in the first model because the residual standard error is higher than the first model and the adjusted r squared value is lower.
@@ -129,7 +129,7 @@ TargetGRIP<- data.frame(ARM=88 , GRIP=94)
 ```
 
 ```{r}
-predict(model.1, TargetGRIP,interval ="prediction")
+predict(model.2, TargetGRIP,interval ="prediction")
 ```
 
 
@@ -155,12 +155,31 @@ The correlation coefficient for model 3 is higher than both model 1 and model 2 
   
 ### Inferential  (Build 2-dimentional model.3)
 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
+
+The third model has the lowest residual standard error and the highest r squared value showing that it's the best linear model out of the three models.
+
+
+
 #### predict model.3 at target point
-  
+```{r}
+TargetARMGRIP<- data.frame(ARM=88 , GRIP=94)
+```
+
+```{r}
+predict(model.3, TargetARMGRIP,interval ="prediction")
+``` 
 
 ## Comparing nested models ANOVA Test
 
 ### Model.1 vs Model.3
+
+
+
+
 ### Model.2 vs Model.3
 
 ## Informally compare Model.1 with model.2
